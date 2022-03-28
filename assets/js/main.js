@@ -26,7 +26,7 @@ for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         elementColumn = `
         <div class="col d-flex justify-content-center">
-            <div class="squared bg_fizzbuzz">
+            <div class="squared bg_fizzbuzz  fs-5">
             fizzbuzz
             </div>
         </div>
@@ -36,8 +36,8 @@ for (let i = 1; i <= 100; i++) {
     else if (i % 3 === 0 && i % 5 !== 0) {
         elementColumn = `
         <div class="col d-flex justify-content-center">
-            <div class="squared bg_fizz">
-            fizz
+            <div class="squared bg_fizz fs-5">
+                fizz
             </div>
         </div>
         `;
@@ -46,7 +46,7 @@ for (let i = 1; i <= 100; i++) {
     else if (i % 3 !== 0 && i % 5 === 0) {
         elementColumn = `
         <div class="col d-flex justify-content-center">
-            <div class="squared bg_buzz">
+            <div class="squared bg_buzz fs-5">
             buzz
             </div>
         </div>
@@ -57,7 +57,7 @@ for (let i = 1; i <= 100; i++) {
         //console.log(document.querySelector(`.squared-${i}`).classList);
         elementColumn = `
         <div class="col d-flex justify-content-center">
-            <div class="squared bg_number">
+            <div class="squared bg_number fs-5">
             ${i}
             </div>
         </div>
