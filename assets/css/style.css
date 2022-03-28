@@ -1,0 +1,35 @@
+:root {
+    --bg_custom: #183A4A;
+    --bg_number: #3D88AE;
+    --bg_fizz: #61D2A4;
+    --bg_buzz: #DE5471;
+    --bg_fizzbuzz: #F9D277;
+}
+
+body {
+    background-color: var(--bg_custom);
+}
+
+.bg_number {
+    background-color: var(--bg_number);
+}
+
+.bg_fizz {
+    background-color: var(--bg_fizz);
+}
+
+.bg_buzz {
+    background-color: var(--bg_buzz);
+}
+
+.bg_fizzbuzz {
+    background-color: var(--bg_fizzbuzz);
+}
+
+.squared {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
