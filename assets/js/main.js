@@ -1,18 +1,8 @@
 //assegno a una variabile la row in cui inserirò i numeri
 const elementRow = document.getElementById('row_numbers');
 
-/* let elementColumn = `
-    <div class="col">
-        <div class="squared-${i}">
-        </div>
-    </div>
-    `; */
 
 let elementColumn ;
-
-const fizzBuzz = "fizzbuzz";
-const fizz = "fizz";
-const buzz = "buzz";
 
 //ciclo for per stampare i numeri
 for (let i = 1; i <= 100; i++) {
@@ -25,7 +15,7 @@ for (let i = 1; i <= 100; i++) {
     //se il numero è multiplo di 3 e 5 comparirà fizzbuzz
     if (i % 3 === 0 && i % 5 === 0) {
         elementColumn = `
-        <div class="col d-flex justify-content-center">
+        <div class="col-auto">
             <div class="squared bg_fizzbuzz  fs-5">
             fizzbuzz
             </div>
@@ -35,7 +25,7 @@ for (let i = 1; i <= 100; i++) {
     //se il numero è multiplo di 3 ma non di 5 comparirà fizz 
     else if (i % 3 === 0 && i % 5 !== 0) {
         elementColumn = `
-        <div class="col d-flex justify-content-center">
+        <div class="col-auto">
             <div class="squared bg_fizz fs-5">
                 fizz
             </div>
@@ -45,7 +35,7 @@ for (let i = 1; i <= 100; i++) {
     //se il numero è multiplo di 5 ma non di 3 comparirà buzz 
     else if (i % 3 !== 0 && i % 5 === 0) {
         elementColumn = `
-        <div class="col d-flex justify-content-center">
+        <div class="col-auto">
             <div class="squared bg_buzz fs-5">
             buzz
             </div>
@@ -56,7 +46,7 @@ for (let i = 1; i <= 100; i++) {
     else {
         //console.log(document.querySelector(`.squared-${i}`).classList);
         elementColumn = `
-        <div class="col d-flex justify-content-center">
+        <div class="col-auto">
             <div class="squared bg_number fs-5">
             ${i}
             </div>
