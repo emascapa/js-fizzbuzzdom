@@ -26,10 +26,10 @@ body {
     background-color: var(--bg_fizzbuzz);
 }
 
-[class*="squared"] {
+.squared {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
 }
